@@ -26,7 +26,7 @@ main_item:
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				text:'button root'
+				text:'button 1'
 				on_press:
 					root.test_capture()
 			second_item:
@@ -36,12 +36,12 @@ main_item:
 	BoxLayout:
 		Button:
 			id:k
-			text:'button text'
+			text:'button 2'
 			on_press:
 				root.test_capture_button()
 		Button:# add widget to main_item  search text
 			id:l
-			text:'button kv'
+			text:'button 3'
 			#on_press:
 			#	root.change_main()
 			#	
