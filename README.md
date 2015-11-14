@@ -1,3 +1,2 @@
-# learn-kivy
-kivy call other  class
-hello
+# Need help in add_widget and scroll view-kivy
+
