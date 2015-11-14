@@ -1,0 +1,62 @@
+main_item:
+<main_item>:
+	sample: second_item #connect main_item and sceond_item usind id,view below
+	texts:search_text
+	BoxLayout:	
+		orientation: 'vertical'
+		BoxLayout:
+			orientation: 'horizontal'
+			BoxLayout:
+				orientation: 'vertical'
+				id:screen_two
+				canvas.before:
+	                Color:
+	                    rgba: 1,0,0,1
+	                Rectangle:
+	                    pos: self.pos
+	                    size: self.size
+			Label:
+				id:search_text
+				text:'hello'
+
+#### swipe control#####
+		
+		
+			
+		ScrollView: 
+
+	        BoxLayout: 
+	            orientation: 'vertical' 
+	            id: screen_one 	
+	            Label:
+	            	text:'one'		
+			
+################
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				text:'button root'
+				on_press:
+					root.test_capture()
+				
+			Button:
+				text:'button kv'
+				
+			second_item:# you can now call other class 
+				id:second_item
+
+				
+			
+<second_item>:
+	BoxLayout:
+		Button:
+			id:k
+			text:'button text'
+			on_press:
+				root.test_capture_button()
+		Button:
+			id:l
+			text:'class text'
+			#on_press:
+			#	root.change_main()
+			#	
